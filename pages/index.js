@@ -7,7 +7,7 @@ import Moment from 'react-moment'
 export const getServerSideProps = async () => {
   const res = await fetch(`https://hacker-news.firebaseio.com/v0/askstories.json?print=pretty`);
   const details = await res.json();
-  let limit = 15;
+  let limit = 10;
   let data = [];
 
   for (let i = 0; i < limit; i++) {
