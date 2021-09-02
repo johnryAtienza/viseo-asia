@@ -33,6 +33,11 @@ function AskDetails({details, hasComment, comment}) {
 
     const addComment = () => {
         const c = document.getElementById('txtComment').value;
+
+        if(!c) {
+            return 'Please input comment first';
+        }
+        
         const commentIdList = details.kids || [];
         const generatedId = _.maxBy(commentIdList, o => { return o }) || 0;
         const newCommentId = generatedId + 1;

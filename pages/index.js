@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.scss'
 import Meta from '../component/Meta'
 import AskList from '../component/AskList'
+import styles from '../styles/Home.module.scss'
 
 export const getServerSideProps = async () => {
   const res = await fetch(`https://hacker-news.firebaseio.com/v0/askstories.json?print=pretty`);

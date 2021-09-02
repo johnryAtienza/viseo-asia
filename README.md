@@ -13,3 +13,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - [SASS](https://sass-lang.com/) for the css compiler 
 - [Lodash](https://lodash.com/) for data and array manipulation  
 - [Moment](https://www.npmjs.com/package/react-moment) for time and date parsing, validates, manipulating dates and display dates and times in JavaScript
+
+## Unit Testing
+- [jest](https://jestjs.io/) Jest is a delightful JavaScript Testing Framework with a focus on simplicity. 
+1. To test go into the `viseo-asia-exam` folder and run `npm test`. 

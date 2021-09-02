@@ -5,7 +5,10 @@ import styles from '../styles/Home.module.scss'
 
 
 
-function Asklist({data}) {
+const Asklist = ({data}) => {
+    if(typeof data === 'undefined') {
+        return (<div>No Data</div>)
+    }
     return (
         <>
         {data.map((row, index) => (
