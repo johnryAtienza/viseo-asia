@@ -1,0 +1,28 @@
+.header {
+    background-color: orange;
+    text-align: center;
+    color: #fff;
+    h5 {
+        margin-bottom: 0;
+    }
+}
+.contentList {
+    background-color: #f6f6ef;
+    color: #969696;
+    .listNumber{
+        margin-left: 10px;
+    }
+    .arrow {
+        transform: rotate(270deg);
+        float: right;
+        margin-right: 5px;
+        margin-top: 4px;
+        font-size: 11px;
+    }
+    .listContainer {
+        margin-left: 0;
+        .subTitle {
+            font-size: 12px;
+        }
+    }
+}
