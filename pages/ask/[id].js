@@ -41,9 +41,7 @@ function AskDetails({details, hasComment, comment}) {
         const commentIdList = details.kids || [];
         const generatedId = _.maxBy(commentIdList, o => { return o }) || 0;
         const newCommentId = generatedId + 1;
-        console.info('comment: ', c)
-        console.info('ids: ', commentIdList)
-        console.info('max value: ', generatedId)
+
         // TODO: build object for new comment
         let data = {
             by: 'johnry',
@@ -53,7 +51,7 @@ function AskDetails({details, hasComment, comment}) {
             time: new Date().getTime(),
             type: "comment"
         }
-        console.info("KIDS: ", details.kids)
+
         // TODO: add comment ID to the kids property
         if (details.kids) {
             details.kids.push(newCommentId);
@@ -61,8 +59,6 @@ function AskDetails({details, hasComment, comment}) {
             details.kids = [newCommentId]
         }
        
-        console.info(data);
-        console.info('details', details);
         // TODO: update comment
         setUpdateComment(data);
         // TODO: clear text area

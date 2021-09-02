@@ -1,4 +1,7 @@
-## Using NextJs Framework for reactJs
+## Introduction
+- This exam is to determine on how a developer handle client requirements and create web application using React JS
+
+## NextJs Framework for reactJs
 - [Next.js](https://nextjs.org/) gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more. No config needed.
 
 ## Getting Started
