@@ -9,14 +9,15 @@
 .contentList {
     position: relative;
     background-color: #f6f6ef;
+    padding: 0 30px;
     color: #969696;
     .titleLink::before {
-        content: '▶';
-        transform: rotate(270deg);
+        content: "▶";
         position: absolute;
-        left: 32px;
-        top: 3px;
+        transform: rotate(270deg);
         font-size: 11px;
+        margin-left: -13px;
+        margin-top: 5px;
     }
     .titleLink {
         a {
@@ -32,26 +33,33 @@
         }
     }
 
-    .listNumber{
-        margin-left: 7px;
-    }
-
     .listContainer {
-        margin-left: 0;
+        margin-left: 10px;
+       
         .subTitle {
             font-size: 12px;
+        }
+        .commentText {
+            margin-top: 10px;
         }
         .commentor::before {
             content: "▶";
             position: absolute;
             transform: rotate(270deg);
             font-size: 11px;
-            margin-left: -11px;
+            margin-left: -13px;
             margin-top: 5px;
         }
         .commentContent {
             color: #000!important;
         }
     
+    }
+    .listContainer::before {
+        content: attr(data-numbering);
+        position: absolute;
+        font-size: 12px;
+        margin-left: -32px;
+        margin-top: 5px;
     }
 }

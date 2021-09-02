@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
 import styles from '../styles/Home.module.scss'
 import Meta from '../component/Meta'
-import Moment from 'react-moment'
+import AskList from '../component/AskList'
 
 export const getServerSideProps = async () => {
   const res = await fetch(`https://hacker-news.firebaseio.com/v0/askstories.json?print=pretty`);
@@ -17,7 +16,6 @@ export const getServerSideProps = async () => {
       const d = await r.json();
       data.push(d);
   }
-  console.info("promise")
 
   return {
       props: {
@@ -27,30 +25,14 @@ export const getServerSideProps = async () => {
   }
 }
 
-export default function Home({details,data}) {
+export default function Home({details, data}) {
   return (
     <div className="container">
       <Meta />
       <div className={`row ` + styles.header}>
         <div className="twelve columns "><h5>Hacker News ASK</h5></div>
       </div>
-      {data.map((row, index) => (
-        <div className={`row ` + styles.contentList} key={row.id}>
-          <div className="twelve column">
-            <div className="row">
-              <div className="one column"><span className={styles.listNumber}>{index + 1}.</span></div>
-              <div className={`eleven columns ` + styles.listContainer}>
-                <div className="row">
-                  <div className={`twelve columns ` + styles.titleLink}><Link href={`/ask/` + row.id}>{row.title}</Link></div>
-                </div>
-                <div className="row">
-                  <div className={`twelve columns ` + styles.subTitle}>{row.score} points by {row.by} <Moment fromNow>{row.time}</Moment> | {row.kids !== undefined ? row.kids.length + ' comments' : 'discuss'}</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      ))}
+      <AskList data={data}/>
       
     </div>
   )
