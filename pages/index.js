@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.scss'
 import Meta from '../component/Meta'
 import Moment from 'react-moment'
@@ -37,13 +38,13 @@ export default function Home({details,data}) {
         <div className={`row ` + styles.contentList} key={row.id}>
           <div className="twelve column">
             <div className="row">
-              <div className="one column"><span className={styles.listNumber}>{index + 1}.</span> <span className={styles.arrow}>▶</span></div>
+              <div className="one column"><span className={styles.listNumber}>{index + 1}.</span></div>
               <div className={`eleven columns ` + styles.listContainer}>
                 <div className="row">
-                  <div className="twelve columns">{row.title}</div>
+                  <div className={`twelve columns ` + styles.titleLink}><Link href={`/ask/` + row.id}>{row.title}</Link></div>
                 </div>
                 <div className="row">
-                  <div className={`twelve columns ` + styles.subTitle}>{row.score} points by {row.by} <Moment fromNow>{row.time}</Moment> | {row.kids ? row.kids.length + ' comments' : 'discuss'}</div>
+                  <div className={`twelve columns ` + styles.subTitle}>{row.score} points by {row.by} <Moment fromNow>{row.time}</Moment> | {row.kids !== undefined ? row.kids.length + ' comments' : 'discuss'}</div>
                 </div>
               </div>
             </div>

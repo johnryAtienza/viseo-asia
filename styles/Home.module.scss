@@ -7,22 +7,51 @@
     }
 }
 .contentList {
+    position: relative;
     background-color: #f6f6ef;
     color: #969696;
-    .listNumber{
-        margin-left: 10px;
-    }
-    .arrow {
+    .titleLink::before {
+        content: '▶';
         transform: rotate(270deg);
-        float: right;
-        margin-right: 5px;
-        margin-top: 4px;
+        position: absolute;
+        left: 32px;
+        top: 3px;
         font-size: 11px;
     }
+    .titleLink {
+        a {
+            text-decoration: none;
+            color: #000;
+
+        }
+        a:visited {
+            color: #969696;
+        }        
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .listNumber{
+        margin-left: 7px;
+    }
+
     .listContainer {
         margin-left: 0;
         .subTitle {
             font-size: 12px;
         }
+        .commentor::before {
+            content: "▶";
+            position: absolute;
+            transform: rotate(270deg);
+            font-size: 11px;
+            margin-left: -11px;
+            margin-top: 5px;
+        }
+        .commentContent {
+            color: #000!important;
+        }
+    
     }
 }
