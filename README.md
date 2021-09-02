@@ -4,6 +4,14 @@
 ## NextJs Framework for reactJs
 - [Next.js](https://nextjs.org/) gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more. No config needed.
 
+## Prerequisites
+
+- You have [Node](https://nodejs.org/en/) v8 with npm installed
+- You are familiar with entering simple [terminal commands](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line)
+- You are familiar with [Git source control](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
+- You will require an internet connection to install npm packages
+- An editor of your choice (e.g. [Atom](https://atom.io/), [VSCode](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com/), [WebStorm](https://www.jetbrains.com/webstorm/), or your own editor/IDE)
+
 ## Getting Started
 
 1. Change into the `viseo-asia-exam` folder and run `npm install`. 
