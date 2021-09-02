@@ -7,10 +7,9 @@ import AskList from '../component/AskList'
 export const getServerSideProps = async () => {
   const res = await fetch(`https://hacker-news.firebaseio.com/v0/askstories.json?print=pretty`);
   const details = await res.json();
-  let limit = 10;
   let data = [];
 
-  for (let i = 0; i < limit; i++) {
+  for (let i = 0; i < details.length; i++) {
     const item = details[i];
       const r = await fetch(`https://hacker-news.firebaseio.com/v0/item/` + item + `.json?print=pretty`);
       const d = await r.json();

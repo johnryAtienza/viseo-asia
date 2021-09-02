@@ -2,8 +2,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-https://reactjs.org/
-
 1. Change into the `viseo-asia-exam` folder and run `npm install`. 
 1. Start the project via `npm run dev`. 
 1. You can then view the project by visiting `localhost:3000` in your browser.
