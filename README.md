@@ -1,4 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Using NextJs Framework for reactJs
+- [Next.js](https://nextjs.org/) gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more. No config needed.
 
 ## Getting Started
 
@@ -15,5 +16,5 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - [Moment](https://www.npmjs.com/package/react-moment) for time and date parsing, validates, manipulating dates and display dates and times in JavaScript
 
 ## Unit Testing
-- [jest](https://jestjs.io/) Jest is a delightful JavaScript Testing Framework with a focus on simplicity. 
+- [jest](https://jestjs.io/) - Jest is a delightful JavaScript Testing Framework with a focus on simplicity. 
 1. To test go into the `viseo-asia-exam` folder and run `npm test`. 
